@@ -7,11 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="goto">go</button>
+    <button id="btn" >go</button>
     <script>
+        const btn = document.querySelector('#btn')
         function goto(){
-            window.location.replace("http://123.172.60.131:433/auth/profile/index");
+            console.log('hello')
+            window.location.replace("http://aox.hopto.org:433/auth/profile/index");
         }
+        btn.addEventListener('click', goto)
     </script>
 </body>
 </html>
