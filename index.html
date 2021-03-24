@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .bg-black {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <button id="btn" >go</button>
+
+    <video class="bg-black" width="320" height="240" controls>
+        <source src="http://aox.hopto.org:9000/movies/Raya%20and%20the%20Last%20Dragon%20(2021)/Raya%20and%20the%20Last%20Dragon%20(2021).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <script>
         const btn = document.querySelector('#btn')
         function goto(){
